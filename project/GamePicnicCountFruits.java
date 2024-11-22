@@ -1,6 +1,6 @@
 package gb.intermediate.project;
 
-import gb.intermediate.model.Kit;
+import gb.intermediate.example.Kit;
 
 /**
  * показываем количество фруктов в кнаборе
@@ -8,7 +8,8 @@ import gb.intermediate.model.Kit;
 public class GamePicnicCountFruits implements Calculate<Kit> {
 
     @Override
-    public void calculate(kit kit) {
+    public void calculate(Kit kit) {
         System.out.printf("Всего фруктов - %s%n", kit.getKitSize());
     }
+
 }

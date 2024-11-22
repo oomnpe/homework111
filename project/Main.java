@@ -1,4 +1,4 @@
-package gb.intermediate;
+package gb.intermediate.project;
 
 import gb.intermediate.controller.Controller;
 

@@ -1,7 +1,7 @@
 package gb.intermediate.project;
 
-import gb.intermediate.model.Kit;
-import gb.intermediate.model.Fruits;
+import gb.intermediate.example.Kit;
+import gb.intermediate.example.Fruits;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

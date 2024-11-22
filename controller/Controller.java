@@ -1,8 +1,8 @@
 package gb.intermediate.controller;
 
-import gb.intermediate.model.Kit;
-import gb.intermediate.model.Fruits;
-import gb.intermediate.model.FruitsKit;
+import gb.intermediate.example.Kit;
+import gb.intermediate.example.Fruits;
+import gb.intermediate.example.FruitsKit;
 import gb.intermediate.project.*;
 
 /**
@@ -12,6 +12,8 @@ import gb.intermediate.project.*;
 public class Controller {
     private Calculate<Kit> calculate;
     private Kit<Fruits> kit;
+    FruitsKit basket;
+
     private static final String promptMenu = "1. Перечень фруктов  для пикника%n"+
             "2. Сколько всего фруктов  в наборе%n"+
             "3. Самое длинное название фрукта в наборе%n"+
@@ -20,9 +22,9 @@ public class Controller {
             "0. Выход из приложения%n"+
             "Ввведите свой выбор: ";
     private GetChoice getChoice;
-
     public Controller() {
-        basket = new FruitsKit(new LoadFruitsFromFile("input.txt").getRawFruits());
+        basket = new FruitsKit(new LoadFruitsFromFile("project/input.txt").getRawFruits());
+        kit = basket;
     }
 
     public void run(){
